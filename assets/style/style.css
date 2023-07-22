@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  Style untuk navigasi */
+header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            margin: 0;
+            padding: 0;
+            flex: 1;
+        }
+        nav {
+            display: flex;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+/* Navbar-End */
+
+/*Style Kontak Saya*/
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kontak-saya {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px 50%;
+        }
+
+        .kontak-saya div {
+            text-align: center;
+        }
+
+        .kontak-saya img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-left: 59px;
+        }
+
+        .kontak-saya img:hover {
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 600px) {
+            .kontak-saya {
+                flex-direction: column;
+            }
+
+            .kontak-saya div {
+                margin-bottom: 20px;
+            }
+        }
+/* Kontak end */
+
+
+/* Tentang Saya */
+.container-pribadi{
+  display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+
+
+
+
+footer {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        footer div {
+            flex: 1;
+            margin: 10px;
+        }
+        footer h4 {
+            margin-bottom: 10px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media screen and (max-width: 768px) {
+            footer {
+                flex-direction: column;
+            }
+            footer div {
+                flex: none;
+            }
+        }
